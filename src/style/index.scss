@@ -1,0 +1,109 @@
+font-face {
+    font-family: 'fontb5ed933057eaf1919dd79d81248cdbce';
+    src: url('https://nomail.com.ua/files/eot/b5ed933057eaf1919dd79d81248cdbce.eot?#iefix') format('embedded-opentype'),
+    url('https://nomail.com.ua/files/woff/b5ed933057eaf1919dd79d81248cdbce.woff') format('woff'),
+    url('https://nomail.com.ua/files/woff2/b5ed933057eaf1919dd79d81248cdbce.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'AvenirNextLTPro-Regular';
+    src: local('AvenirNextLTPro-Regular'),
+    url('https://nomail.com.ua/files/woff/b5ed933057eaf1919dd79d81248cdbce.woff') format('woff');
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    font-family: 'AvenirNextLTPro-Regular';
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#root {
+    width: 100%;
+}
+
+.container {
+    padding: 15px;
+    display: flex;
+}
+
+.Header {
+    border-bottom: 1px solid #e6e6e6;
+    text-align: right;
+    padding: .5rem 1rem;
+    background-color: #f8f9fa;
+}
+
+.WidgetProfile {
+    min-width: 230px;
+    width: 420px;
+    background: #8cc9bc;
+    overflow: auto;
+    border-radius: 15px;
+    border-top: 1px solid #ffff;
+    box-shadow: 0px 71px 100px -30px rgba(0, 0, 0, 0.3);
+    disaply: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    &__header {
+        text-align: center;
+        color: #ffff;;
+    }
+
+    &__header hr {
+        width: 8.1em;
+        height: 1.5px;
+        border: 0;
+        background: #ffff;
+    }
+
+    &__avatarContainer {
+        padding: 30px 0;
+    }
+
+    &__avatarFrame {
+        max-width: 12.5em;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__avatar {
+        border: 0.3em solid #ffff;
+        border-radius: 50%;
+        width: 100%;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f2f1ef;
+        padding: 15px;
+    }
+
+    &__statistic {
+        flex-grow: 1;
+        color: #505a64;
+        font-size: 1.12em;
+        text-align: center;
+    }
+
+    &__count,
+    &__subCount {
+        display: block;
+    }
+
+    &__devider {
+        width: 2px;
+        background-color: #dcdddf;
+    }
+}
+
