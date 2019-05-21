@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from './Header';
-import WidgetProfile from './WidgetProfile';
+import UserProfile from './UserProfile';
 
 class App extends Component{
     constructor(props) {
@@ -21,7 +21,7 @@ class App extends Component{
             <>
                 <Header/>
                 <div className="container">
-                    { this.state.profiles.map( profile => <WidgetProfile key={profile.id}  {...profile} />) }
+                    { this.state.profiles.map( profile => <UserProfile key={profile.id}  {...profile} />) }
                 </div>
             </>
         );
